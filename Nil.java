@@ -1,0 +1,40 @@
+
+public class Nil implements ImmutableList {
+    public Nil() {}
+
+    public boolean equals(final Object other) {
+        return other instanceof Nil;
+    } // equals
+
+    public int length(){
+        return 0;
+    } // length
+
+    public int sum(){
+        return 0;
+    } // sum
+
+    public ImmutableList append(final ImmutableList other){
+        return other;
+    } // append
+
+    public boolean contains(final int value){
+        return value == 0;
+    } // contains
+
+    public String toString() {
+        return "Nil";
+    } // toString
+
+    public int hashCode() {
+        return 0;
+    } // hashCode
+
+    public boolean isEmpty() {
+        return true;
+    }
+
+    public ImmutableList addAmount(final int amount) {
+        return this;
+    }
+} // Nil
